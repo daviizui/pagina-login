@@ -1,0 +1,198 @@
+/* Importa a fonte Poppins do Google Fonts com vários pesos e estilos. */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Estilos globais aplicados a todos os elementos. */
+* {
+  /* Define a fonte padrão para Poppins, com fallback para sans-serif. */
+  font-family: "Poppins", sans-serif;
+  /* Remove as margens padrão dos elementos. */
+  margin: 0;
+  /* Remove o preenchimento padrão dos elementos. */
+  padding: 0;
+  /* Define o modelo de caixa para border-box, incluindo bordas e preenchimento no cálculo da largura e altura. */
+  box-sizing: border-box;
+}
+
+/* Estilos aplicados ao elemento body. */
+body {
+  /* Define o body como um contêiner flexível. */
+  display: flex;
+  /* Centraliza o conteúdo horizontalmente. */
+  justify-content: center;
+  /* Centraliza o conteúdo verticalmente. */
+  align-items: center;
+  /* Define a altura mínima do body para 100% da viewport, garantindo que o conteúdo seja centralizado verticalmente. */
+  min-height: 100vh;
+  /* Define a imagem de fundo, impedindo a repetição, cobrindo todo o elemento e centralizando-a. */
+  background: url(./img/background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilos aplicados ao contêiner principal (wrapper). */
+.wrapper {
+  /* Define a largura do contêiner. */
+  width: 420px;
+  /* Define a cor do texto para branco. */
+  color: #fff;
+  /* Define o raio da borda para arredondar os cantos. */
+  border-radius: 10px;
+  /* Define o preenchimento interno do contêiner. */
+  padding: 30px 40px;
+  /* Define o fundo como transparente. */
+  background: transparent;
+  /* Define uma borda com transparência. */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  /* Aplica um efeito de desfoque ao fundo. */
+  backdrop-filter: blur(20px);
+  /* Adiciona uma sombra suave ao contêiner. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos aplicados ao título h1 dentro do contêiner wrapper. */
+.wrapper h1 {
+  /* Define o tamanho da fonte. */
+  font-size: 36px;
+  /* Centraliza o texto horizontalmente. */
+  text-align: center;
+}
+
+/* Estilos aplicados ao contêiner de entrada de texto (input-box). */
+.wrapper .input-box {
+  /* Define a largura do contêiner. */
+  width: 100%;
+  /* Define a altura do contêiner. */
+  height: 50px;
+  /* Define a margem superior e inferior. */
+  margin: 30px 0;
+  /* Define a posição como relativa para posicionar o ícone dentro dele. */
+  position: relative;
+}
+
+/* Estilos aplicados ao campo de entrada de texto (input). */
+.input-box input {
+  /* Define a largura do campo de entrada. */
+  width: 100%;
+  /* Define a altura do campo de entrada. */
+  height: 100%;
+  /* Define o fundo como transparente. */
+  background: transparent;
+  /* Remove a borda padrão. */
+  border: none;
+  /* Remove o contorno padrão quando o campo está focado. */
+  outline: none;
+  /* Define uma borda com transparência. */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  /* Define o raio da borda para arredondar os cantos. */
+  border-radius: 40px;
+  /* Define o tamanho da fonte. */
+  font-size: 16px;
+  /* Define a cor do texto. */
+  color: #fff;
+  /* Define o preenchimento interno. */
+  padding: 20px 45px 20px 20px;
+}
+
+/* Estilos aplicados ao placeholder do campo de entrada. */
+.input-box input::placeholder {
+  /* Define a cor do placeholder. */
+  color: #fff;
+}
+
+/* Estilos aplicados ao ícone dentro do contêiner de entrada. */
+.input-box i {
+  /* Define a posição como absoluta para posicionar o ícone. */
+  position: absolute;
+  /* Define a posição horizontal do ícone. */
+  right: 20px;
+  /* Define a posição vertical do ícone. */
+  top: 50%;
+  /* Centraliza o ícone verticalmente. */
+  transform: translateY(-50%);
+  /* Define o tamanho da fonte do ícone. */
+  font-size: 20px;
+}
+
+/* Estilos aplicados ao contêiner de "lembrar senha" e "esqueci a senha". */
+.wrapper .remember-forgot {
+  /* Define o contêiner como flexível. */
+  display: flex;
+  /* Distribui o espaço entre os elementos. */
+  justify-content: space-between;
+  /* Define o tamanho da fonte. */
+  font-size: 15px;
+  /* Define a margem superior e inferior. */
+  margin: -15px 0 15px;
+}
+
+/* Estilos aplicados ao campo de entrada de seleção dentro do label. */
+.remember-forgot label input {
+  /* Define a cor de destaque do campo de seleção. */
+  accent-color: #fff;
+  /* Define a margem direita. */
+  margin-right: 5px;
+}
+
+/* Estilos aplicados aos links dentro do contêiner "remember-forgot". */
+.remember-forgot a {
+  /* Define a cor do texto. */
+  color: #fff;
+  /* Remove a decoração de texto padrão. */
+  text-decoration: none;
+}
+
+/* Estilos aplicados ao link quando o mouse passa por cima. */
+.remember-forgot a:hover {
+  /* Adiciona sublinhado ao texto. */
+  text-decoration: underline;
+}
+
+/* Estilos aplicados ao botão. */
+.btn {
+  /* Define a largura do botão. */
+  width: 100%;
+  /* Define a altura do botão. */
+  height: 45px;
+  /* Define a cor de fundo do botão. */
+  background-color: #fff;
+  /* Remove a borda padrão. */
+  border: none;
+  /* Remove o contorno padrão quando o botão está focado. */
+  outline: none;
+  /* Define o raio da borda para arredondar os cantos. */
+  border-radius: 40px;
+  /* Adiciona uma sombra suave ao botão. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Define o cursor como ponteiro. */
+  cursor: pointer;
+  /* Define o tamanho da fonte. */
+  font-size: 16px;
+  /* Define a cor do texto. */
+  color: #333;
+  /* Define a espessura da fonte. */
+  font-weight: 600;
+}
+
+/* Estilos aplicados ao contêiner de link de registro. */
+.register-link {
+  /* Define o tamanho da fonte. */
+  font-size: 15px;
+  /* Centraliza o texto horizontalmente. */
+  text-align: center;
+  /* Define a margem superior e inferior. */
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  /* Define a cor do texto do link dentro do parágrafo (p) dentro do elemento com a classe "register-link" como branco (#fff). */
+  color: #fff;
+  /* Remove a decoração padrão do texto do link, como o sublinhado. */
+  text-decoration: none;
+  /* Define a espessura da fonte do link como 600, tornando-o semi-negrito. */
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  /* Adiciona um sublinhado ao texto do link quando o mouse passa por cima (hover). */
+  text-decoration: underline;
+}
