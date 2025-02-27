@@ -1,2 +1,2 @@
 # pagina-login
-Projeto de uma pagina de login usando HTML e CSS
+Projeto de uma página de login usando HTML e CSS
